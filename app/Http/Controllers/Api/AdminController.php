@@ -77,6 +77,7 @@ class AdminController extends Controller
      */
     public function getEvents(Request $request)
     {
+        echo(10);
         $query = Event::with('venue');
         
         if ($request->has('status')) {
